@@ -1,0 +1,18 @@
+QDialog {
+    background-color: #222222;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #24af37;
+}
+
+QLabel {
+    color: #e7e7e7;
+    font-weight: bold;
+}
+
+ QLineEdit {
+    background-color: #363636;
+    color: #e7e7e7;
+    font-weight: bold;
+}
