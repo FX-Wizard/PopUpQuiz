@@ -3,6 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 from quizer import QuizMaster, Quiz
 
+
 class Ui_QuizMaker(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super(Ui_QuizMaker, self).__init__(parent)
@@ -10,8 +11,8 @@ class Ui_QuizMaker(QtWidgets.QMainWindow):
         self.setMinimumSize(400, 560)
         # tool bar
         self.toolBar = QtWidgets.QToolBar()
-        self.aNewQuiz = QtWidgets.QAction("New")
-        self.aOpenQuiz = QtWidgets.QAction("Open")
+        self.aNewQuiz = QtWidgets.QAction("New", self)
+        self.aOpenQuiz = QtWidgets.QAction("Open", self)
         self.aNewQuiz.setShortcut("Ctrl+N")
         self.aOpenQuiz.setShortcut("Ctrl+O")
         self.aNewQuiz.triggered.connect(self.newQuiz)
@@ -137,7 +138,7 @@ class AnswerTypeDialog(QtWidgets.QDialog):
 
     def retranslateUi(self):
         _translate = QtCore.QCoreApplication.translate
-        self.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.setWindowTitle(_translate("Dialog", "Select Answer Type"))
         self.writtenBtn.setText(_translate("Dialog", "Written"))
         self.trueFalseBtn.setText(_translate("Dialog", "True or False"))
         self.multChoiceBtn.setText(_translate("Dialog", "Multiple Choice"))
@@ -149,11 +150,12 @@ class AnswerTypeDialog(QtWidgets.QDialog):
 
 class QnAWidget(QtWidgets.QDialog):
     trigger = QtCore.pyqtSignal(str, list)
-    choices = []
-
+    
     def __init__(self, form=None, parent=None):
         super(QnAWidget, self).__init__(parent)
-        
+        self.choices = []
+
+        self.setWindowTitle("Set QnA")
         self.layout = QtWidgets.QVBoxLayout()
         self.qLayout = QtWidgets.QVBoxLayout()
         self.layout.addLayout(self.qLayout)
@@ -203,8 +205,9 @@ class QnAWidget(QtWidgets.QDialog):
     def returnQuestion(self):
         question = self.question.text()
         answers = [c.text() for c in self.choices]
-        self.trigger.emit(question, answers)
-        self.close()
+        if question and answers:
+            self.trigger.emit(question, answers)
+            self.close()
 
 
 if __name__ == "__main__":

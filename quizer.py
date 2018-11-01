@@ -105,8 +105,12 @@ class Quiz(object):
 
     def checkAnswer(self, response):
         answer = self.quiz["answer"]
-        if response == answer:
+        if response in answer:
+            self.quiz["timesCorrect"] += 1
+            self.saveQuiz()
             return "Correct!"
         else:
+            self.quiz["timesIncorrect"] += 1
+            self.saveQuiz()
             return "Wrong!"
         

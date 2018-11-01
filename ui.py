@@ -14,12 +14,14 @@ class Popup(QtWidgets.QDialog):
         super(Popup, self).__init__(parent)
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | # Hide window borders
                             #QtCore.Qt.WindowDoesNotAcceptFocus | # doesnt steal focus
-                            QtCore.Qt.WindowStaysOnTopHint) # keep window on top
+                            QtCore.Qt.WindowStaysOnTopHint |
+                            QtCore.Qt.SplashScreen) # keep window on top
 
+        self.setMinimumSize(200, 75)
         self.setStyleSheet(open("style.qss", "r").read())
 
         # Widgets
-        self.settingsBtn = QtWidgets.QCommandLinkButton()
+        # self.settingsBtn = QtWidgets.QCommandLinkButton()
 
         self.textBody = QtWidgets.QLabel(self)
         self.textBody.setWordWrap = True
@@ -29,7 +31,7 @@ class Popup(QtWidgets.QDialog):
         # Layout
         self.layout = QtWidgets.QGridLayout()
         self.layout.setSpacing(10)
-        self.layout.addWidget(self.settingsBtn, 1, 0)
+        # self.layout.addWidget(self.settingsBtn, 1, 0)
         self.layout.addWidget(self.textBody, 2, 0)
         self.setLayout(self.layout)
 
@@ -146,8 +148,15 @@ class QuizTimer(object):
     def stop(self):
         self.timer.stop()
 
+    def update(self, time):
+        self.stop()
+        self.delay = time * 60000
+        self.start()
+
 
 class SetInterval(QtWidgets.QWidget):
+    trigger = QtCore.pyqtSignal(int)
+
     def __init__(self):
         super(SetInterval, self).__init__()
         self.setWindowTitle("Set Timer Interval")
@@ -175,6 +184,7 @@ class SetInterval(QtWidgets.QWidget):
     def setTime(self):
         time = self.timeSetter.value()
         QuizMaster().setQuestionTime(time)
+        self.trigger.emit(time)
         self.close()
 
     def getTime(self):
@@ -220,6 +230,7 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
 
     def setTimer(self):
         self.setTimerDialog = SetInterval()
+        self.setTimerDialog.trigger[int].connect(self.timer.update)
 
     def showQuizMaker(self):
         self.quizMaker = Ui_QuizMaker()
