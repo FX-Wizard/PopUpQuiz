@@ -1,10 +1,1333 @@
 {
     "1": {
         "answer": [
-            "test"
+            "love"
         ],
         "form": "written",
-        "question": "test",
+        "question": "\u7231 \u00e0i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "10": {
+        "answer": [
+            "tea"
+        ],
+        "form": "written",
+        "question": "\u8336 ch\u00e1",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "100": {
+        "answer": [
+            "Four, 4"
+        ],
+        "form": "written",
+        "question": "\u56db s\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "101": {
+        "answer": [
+            "classifier for years (of age); year; year (of crop harvests)"
+        ],
+        "form": "written",
+        "question": "\u5c81 su\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "102": {
+        "answer": [
+            "he, him, her"
+        ],
+        "form": "written",
+        "question": "\u4ed6 t\u0101",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "103": {
+        "answer": [
+            "she"
+        ],
+        "form": "written",
+        "question": "\u5979 t\u0101",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "104": {
+        "answer": [
+            "too"
+        ],
+        "form": "written",
+        "question": "\u592a t\u00e0i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "105": {
+        "answer": [
+            "weather"
+        ],
+        "form": "written",
+        "question": "\u5929\u6c14 ti\u0101n q\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "106": {
+        "answer": [
+            "listen, hear, obey"
+        ],
+        "form": "written",
+        "question": "\u542c t\u012bng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "107": {
+        "answer": [
+            "classmate"
+        ],
+        "form": "written",
+        "question": "\u540c\u5b66 t\u00f3ng xu\u00e9",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "108": {
+        "answer": [
+            "Hello (on telephone), hey"
+        ],
+        "form": "written",
+        "question": "\u5582 w\u00e8i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "109": {
+        "answer": [
+            "I, me"
+        ],
+        "form": "written",
+        "question": "\u6211 w\u01d2",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "11": {
+        "answer": [
+            "eat"
+        ],
+        "form": "written",
+        "question": "\u5403 ch\u012b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "110": {
+        "answer": [
+            "we, us"
+        ],
+        "form": "written",
+        "question": "\u6211\u4eec w\u01d2 men",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "111": {
+        "answer": [
+            "five, 5"
+        ],
+        "form": "written",
+        "question": "\u4e94 w\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "112": {
+        "answer": [
+            "like, fond of"
+        ],
+        "form": "written",
+        "question": "\u559c\u6b22 x\u01d0 huan",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "113": {
+        "answer": [
+            "down, below, later"
+        ],
+        "form": "written",
+        "question": "\u4e0b xi\u00e0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "114": {
+        "answer": [
+            "afternoon"
+        ],
+        "form": "written",
+        "question": "\u4e0b\u5348 xi\u00e0 w\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "115": {
+        "answer": [
+            "to rain, rainy"
+        ],
+        "form": "written",
+        "question": "\u4e0b\u96e8 xi\u00e0 y\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "116": {
+        "answer": [
+            "Mister (Mr.)"
+        ],
+        "form": "written",
+        "question": "\u5148\u751f xi\u0101n sheng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "117": {
+        "answer": [
+            "now, present"
+        ],
+        "form": "written",
+        "question": "\u73b0\u5728 xi\u00e0n z\u00e0i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "118": {
+        "answer": [
+            "think, believe"
+        ],
+        "form": "written",
+        "question": "\u60f3 xi\u01ceng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "119": {
+        "answer": [
+            "small, tiny"
+        ],
+        "form": "written",
+        "question": "\u5c0f xi\u01ceo",
+        "timesCorrect": 0,
+        "timesIncorrect": 1
+    },
+    "12": {
+        "answer": [
+            "taxi"
+        ],
+        "form": "written",
+        "question": "\u51fa\u79df\u8f66 ch\u016b z\u016b ch\u0113",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "120": {
+        "answer": [
+            "young lady, Miss, (slang) prostitute"
+        ],
+        "form": "written",
+        "question": "\u5c0f\u59d0 xi\u01ceo jie",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "121": {
+        "answer": [
+            "some, few"
+        ],
+        "form": "written",
+        "question": "\u4e9b xi\u0113",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "122": {
+        "answer": [
+            "to write"
+        ],
+        "form": "written",
+        "question": "\u5199 xi\u011b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "123": {
+        "answer": [
+            "thanks"
+        ],
+        "form": "written",
+        "question": "\u8c22\u8c22 xi\u00e8 xie",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "124": {
+        "answer": [
+            "week"
+        ],
+        "form": "written",
+        "question": "\u661f\u671f x\u012bng q\u012b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "125": {
+        "answer": [
+            "student, school child"
+        ],
+        "form": "written",
+        "question": "\u5b66\u751f xu\u00e9 sheng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "126": {
+        "answer": [
+            "to learn, to study"
+        ],
+        "form": "written",
+        "question": "\u5b66\u4e60 xu\u00e9 x\u00ed",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "127": {
+        "answer": [
+            "school"
+        ],
+        "form": "written",
+        "question": "\u5b66\u6821 xu\u00e9 xi\u00e0o",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "128": {
+        "answer": [
+            "One, 1, single"
+        ],
+        "form": "written",
+        "question": "\u4e00 y\u012b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "129": {
+        "answer": [
+            "a little (bit)"
+        ],
+        "form": "written",
+        "question": "\u4e00\u70b9\u513f y\u012b di\u01cen er",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "13": {
+        "answer": [
+            "to make a phone call"
+        ],
+        "form": "written",
+        "question": "\u6253\u7535\u8bdd d\u01ce di\u00e0n hu\u00e0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "130": {
+        "answer": [
+            "doctor"
+        ],
+        "form": "written",
+        "question": "\u533b\u751f y\u012b sh\u0113ng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "131": {
+        "answer": [
+            "hospital"
+        ],
+        "form": "written",
+        "question": "\u533b\u9662 y\u012b yu\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "132": {
+        "answer": [
+            "clothes"
+        ],
+        "form": "written",
+        "question": "\u8863\u670d y\u012b fu",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "133": {
+        "answer": [
+            "chair"
+        ],
+        "form": "written",
+        "question": "\u6905\u5b50 y\u01d0 zi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "134": {
+        "answer": [
+            "have"
+        ],
+        "form": "written",
+        "question": "\u6709 y\u01d2u",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "135": {
+        "answer": [
+            "month, moon"
+        ],
+        "form": "written",
+        "question": "\u6708 yu\u00e8",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "136": {
+        "answer": [
+            "goodbye, see you later"
+        ],
+        "form": "written",
+        "question": "\u518d\u89c1 z\u00e0i ji\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "137": {
+        "answer": [
+            "(located) at, in"
+        ],
+        "form": "written",
+        "question": "\u5728 z\u00e0i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "138": {
+        "answer": [
+            "How, why"
+        ],
+        "form": "written",
+        "question": "\u600e\u4e48 z\u011bn me",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "139": {
+        "answer": [
+            "how are things, how are you"
+        ],
+        "form": "written",
+        "question": "\u600e\u4e48\u6837 z\u011bn me y\u00e0ng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "14": {
+        "answer": [
+            "big, huge, large"
+        ],
+        "form": "written",
+        "question": "\u5927 d\u00e0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "140": {
+        "answer": [
+            "this, these"
+        ],
+        "form": "written",
+        "question": "\u8fd9 zh\u00e8",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "141": {
+        "answer": [
+            "China, Middle Kingdom"
+        ],
+        "form": "written",
+        "question": "\u4e2d\u56fd zh\u014dng gu\u00f3",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "142": {
+        "answer": [
+            "noon, midday"
+        ],
+        "form": "written",
+        "question": "\u4e2d\u5348 zh\u014dng w\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "143": {
+        "answer": [
+            "live, dwell, stay, reside"
+        ],
+        "form": "written",
+        "question": "\u4f4f zh\u00f9",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "144": {
+        "answer": [
+            "table, desk"
+        ],
+        "form": "written",
+        "question": "\u684c\u5b50 zhu\u014d zi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "145": {
+        "answer": [
+            "letter, character, word, symbol"
+        ],
+        "form": "written",
+        "question": "\u5b57 z\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "146": {
+        "answer": [
+            "yesterday"
+        ],
+        "form": "written",
+        "question": "\u6628\u5929 zu\u00f3 ti\u0101n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "147": {
+        "answer": [
+            "do, make, produce, write"
+        ],
+        "form": "written",
+        "question": "\u505a zu\u00f2",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "148": {
+        "answer": [
+            "sit, seat; to take (a bus, airplane)"
+        ],
+        "form": "written",
+        "question": "\u5750 zu\u00f2",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "15": {
+        "answer": [
+            "de"
+        ],
+        "form": "written",
+        "question": "\u7684 in pinyin",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "16": {
+        "answer": [
+            "a little, a bit, drop"
+        ],
+        "form": "written",
+        "question": "\u70b9 di\u01cen",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "17": {
+        "answer": [
+            "computer"
+        ],
+        "form": "written",
+        "question": "\u7535\u8111 di\u00e0n n\u01ceo",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "18": {
+        "answer": [
+            "television"
+        ],
+        "form": "written",
+        "question": "\u7535\u89c6 di\u00e0n sh\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "19": {
+        "answer": [
+            "movie, film"
+        ],
+        "form": "written",
+        "question": "\u7535\u5f71 di\u00e0n y\u01d0ng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "2": {
+        "answer": [
+            "eight, 8"
+        ],
+        "form": "written",
+        "question": "\u516b b\u0101",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "20": {
+        "answer": [
+            "thing, stuff, person"
+        ],
+        "form": "written",
+        "question": "\u4e1c\u897f d\u014dng xi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "21": {
+        "answer": [
+            "all, both"
+        ],
+        "form": "written",
+        "question": "\u90fd d\u014du",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "22": {
+        "answer": [
+            "to read, to study"
+        ],
+        "form": "written",
+        "question": "\u8bfb d\u00fa",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "23": {
+        "answer": [
+            "sorry, excuse me, pardon me"
+        ],
+        "form": "written",
+        "question": "\u5bf9\u4e0d\u8d77 du\u00ec bu q\u01d0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "24": {
+        "answer": [
+            "many, much, lots"
+        ],
+        "form": "written",
+        "question": "\u591a du\u014d",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "25": {
+        "answer": [
+            "how much, how many"
+        ],
+        "form": "written",
+        "question": "\u591a\u5c11 du\u014d sh\u01ceo",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "26": {
+        "answer": [
+            "son"
+        ],
+        "form": "written",
+        "question": "\u513f\u5b50 \u00e9r zi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "27": {
+        "answer": [
+            "Two, 2"
+        ],
+        "form": "written",
+        "question": "\u4e8c \u00e8r",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "28": {
+        "answer": [
+            "restaurant, hotel"
+        ],
+        "form": "written",
+        "question": "\u996d\u5e97 f\u00e0n di\u00e0n ",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "29": {
+        "answer": [
+            "airplane"
+        ],
+        "form": "written",
+        "question": "\u98de\u673a f\u0113i j\u012b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "3": {
+        "answer": [
+            "father"
+        ],
+        "form": "written",
+        "question": "\u7238\u7238 b\u00e0 ba",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "30": {
+        "answer": [
+            "minute"
+        ],
+        "form": "written",
+        "question": "\u5206\u949f f\u0113n zh\u014dng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "31": {
+        "answer": [
+            "happy, glad, cheerful"
+        ],
+        "form": "written",
+        "question": "\u9ad8\u5174 g\u0101o x\u00ecng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "32": {
+        "answer": [
+            "individual, this, that, size"
+        ],
+        "form": "written",
+        "question": "\u4e2a g\u00e8",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "33": {
+        "answer": [
+            "job, work, construction, task"
+        ],
+        "form": "written",
+        "question": "\u5de5\u4f5c g\u014dng zu\u00f2",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "34": {
+        "answer": [
+            "dog"
+        ],
+        "form": "written",
+        "question": "\u72d7 g\u01d2u",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "35": {
+        "answer": [
+            "Chinese language"
+        ],
+        "form": "written",
+        "question": "\u6c49\u8bed h\u00e0n y\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "36": {
+        "answer": [
+            "good"
+        ],
+        "form": "written",
+        "question": "\u597d h\u01ceo",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "37": {
+        "answer": [
+            "day of month"
+        ],
+        "form": "written",
+        "question": "\u53f7 h\u00e0o",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "38": {
+        "answer": [
+            "drink"
+        ],
+        "form": "written",
+        "question": "\u559d h\u0113",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "39": {
+        "answer": [
+            "and, with"
+        ],
+        "form": "written",
+        "question": "\u548c h\u00e9",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "4": {
+        "answer": [
+            "cup, glass"
+        ],
+        "form": "written",
+        "question": "\u676f\u5b50 b\u0113i zi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "40": {
+        "answer": [
+            "very"
+        ],
+        "form": "written",
+        "question": "\u5f88 h\u011bn",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "41": {
+        "answer": [
+            "rear, back, behind"
+        ],
+        "form": "written",
+        "question": "\u540e\u9762 h\u00f2u mi\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "42": {
+        "answer": [
+            "go back, turn around, answer, return"
+        ],
+        "form": "written",
+        "question": "\u56de hu\u00ed",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "43": {
+        "answer": [
+            "can, possible, able"
+        ],
+        "form": "written",
+        "question": "\u4f1a hu\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "44": {
+        "answer": [
+            "how much, how many, several, a few"
+        ],
+        "form": "written",
+        "question": "\u51e0 j\u01d0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "45": {
+        "answer": [
+            "home, family"
+        ],
+        "form": "written",
+        "question": "\u5bb6 ji\u0101",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "46": {
+        "answer": [
+            "call, shout, order, ask"
+        ],
+        "form": "written",
+        "question": "\u53eb ji\u00e0o",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "47": {
+        "answer": [
+            "today"
+        ],
+        "form": "written",
+        "question": "\u4eca\u5929 j\u012bn ti\u0101n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "48": {
+        "answer": [
+            "nine, 9"
+        ],
+        "form": "written",
+        "question": "\u4e5d ji\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "49": {
+        "answer": [
+            "open, start, turn on"
+        ],
+        "form": "written",
+        "question": "\u5f00 k\u0101i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "5": {
+        "answer": [
+            "Beijing"
+        ],
+        "form": "written",
+        "question": "\u5317\u4eac b\u011bi j\u012bng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "50": {
+        "answer": [
+            "to look at"
+        ],
+        "form": "written",
+        "question": "\u770b k\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "51": {
+        "answer": [
+            "see"
+        ],
+        "form": "written",
+        "question": "\u770b\u89c1 k\u00e0n ji\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "52": {
+        "answer": [
+            "unit, piece"
+        ],
+        "form": "written",
+        "question": "\u5757 ku\u00e0i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "53": {
+        "answer": [
+            "come, arrive"
+        ],
+        "form": "written",
+        "question": "\u6765 l\u00e1i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "54": {
+        "answer": [
+            "teacher"
+        ],
+        "form": "written",
+        "question": "\u8001\u5e08 l\u01ceo sh\u012b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "55": {
+        "answer": [
+            "(completed), (past tense)"
+        ],
+        "form": "written",
+        "question": "\u4e86 le",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "56": {
+        "answer": [
+            "cold"
+        ],
+        "form": "written",
+        "question": "\u51b7 l\u011bng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "57": {
+        "answer": [
+            "inside"
+        ],
+        "form": "written",
+        "question": "\u91cc l\u01d0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "58": {
+        "answer": [
+            "six, 6"
+        ],
+        "form": "written",
+        "question": "\u516d li\u00f9",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "59": {
+        "answer": [
+            "(question tag)"
+        ],
+        "form": "written",
+        "question": "\u5417 ma",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "6": {
+        "answer": [
+            "origin, source"
+        ],
+        "form": "written",
+        "question": "\u672c b\u011bn",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "60": {
+        "answer": [
+            "mum, mama, mother"
+        ],
+        "form": "written",
+        "question": "\u5988\u5988 m\u0101 ma",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "61": {
+        "answer": [
+            "buy"
+        ],
+        "form": "written",
+        "question": "\u4e70 m\u01cei",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "62": {
+        "answer": [
+            "cat"
+        ],
+        "form": "written",
+        "question": "\u732b m\u0101o",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "63": {
+        "answer": [
+            "it doesn't matter"
+        ],
+        "form": "written",
+        "question": "\u6ca1\u5173\u7cfb m\u00e9i gu\u0101n xi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "64": {
+        "answer": [
+            "haven't, hasn't, doesn't exist, not have, dont have"
+        ],
+        "form": "written",
+        "question": "\u6ca1\u6709 m\u00e9i y\u01d2u ",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "65": {
+        "answer": [
+            "(cooked) rice"
+        ],
+        "form": "written",
+        "question": "\u7c73\u996d m\u01d0 f\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "66": {
+        "answer": [
+            "name"
+        ],
+        "form": "written",
+        "question": "\u540d\u5b57 m\u00edng zi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "67": {
+        "answer": [
+            "tomorrow"
+        ],
+        "form": "written",
+        "question": "\u660e\u5929 m\u00edng ti\u0101n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "68": {
+        "answer": [
+            "which"
+        ],
+        "form": "written",
+        "question": "\u54ea n\u01ce",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "69": {
+        "answer": [
+            "(question particle for subjects already mentioned)"
+        ],
+        "form": "written",
+        "question": "\u5462 ne",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "7": {
+        "answer": [
+            "you're welcome, my pleasure"
+        ],
+        "form": "written",
+        "question": "\u4e0d\u5ba2\u6c14 b\u00fa k\u00e8 qi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "70": {
+        "answer": [
+            "able, capable, ability, capability"
+        ],
+        "form": "written",
+        "question": "\u80fd n\u00e9ng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "71": {
+        "answer": [
+            "you (informal)"
+        ],
+        "form": "written",
+        "question": "\u4f60 n\u01d0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "72": {
+        "answer": [
+            "year"
+        ],
+        "form": "written",
+        "question": "\u5e74 ni\u00e1n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "73": {
+        "answer": [
+            "daughter"
+        ],
+        "form": "written",
+        "question": "\u5973\u513f n\u01da \u00e9r",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "74": {
+        "answer": [
+            "friend"
+        ],
+        "form": "written",
+        "question": "\u670b\u53cb p\u00e9ng you",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "75": {
+        "answer": [
+            "pretty, beautiful"
+        ],
+        "form": "written",
+        "question": "\u6f02\u4eae pi\u00e0o liang",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "76": {
+        "answer": [
+            "apple"
+        ],
+        "form": "written",
+        "question": "\u82f9\u679c p\u00edng gu\u01d2",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "77": {
+        "answer": [
+            "seven, 7"
+        ],
+        "form": "written",
+        "question": "\u4e03 q\u012b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "78": {
+        "answer": [
+            "ahead, in front, preceding, above"
+        ],
+        "form": "written",
+        "question": "\u524d\u9762 qi\u00e1n mi\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 1
+    },
+    "79": {
+        "answer": [
+            "coin, money"
+        ],
+        "form": "written",
+        "question": "\u94b1 qi\u00e1n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "8": {
+        "answer": [
+            "not, no"
+        ],
+        "form": "written",
+        "question": "\u4e0d b\u00f9",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "80": {
+        "answer": [
+            "ask, invite, please, request"
+        ],
+        "form": "written",
+        "question": "\u8bf7 q\u01d0ng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "81": {
+        "answer": [
+            "go, go to (a place)"
+        ],
+        "form": "written",
+        "question": "\u53bb q\u00f9",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "82": {
+        "answer": [
+            "heat, hot"
+        ],
+        "form": "written",
+        "question": "\u70ed r\u00e8",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "83": {
+        "answer": [
+            "man, person, people"
+        ],
+        "form": "written",
+        "question": "\u4eba r\u00e9n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "84": {
+        "answer": [
+            "to know, recognize, be familiar"
+        ],
+        "form": "written",
+        "question": "\u8ba4\u8bc6 r\u00e8n shi",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "85": {
+        "answer": [
+            "three, 3"
+        ],
+        "form": "written",
+        "question": "\u4e09 s\u0101n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "86": {
+        "answer": [
+            "store, shop"
+        ],
+        "form": "written",
+        "question": "\u5546\u5e97 sh\u0101ng di\u00e0n",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "87": {
+        "answer": [
+            "on"
+        ],
+        "form": "written",
+        "question": "\u4e0a sh\u00e0ng",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "88": {
+        "answer": [
+            "morning"
+        ],
+        "form": "written",
+        "question": "\u4e0a\u5348 sh\u00e0ng w\u01d4",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "89": {
+        "answer": [
+            "few, little, lack"
+        ],
+        "form": "written",
+        "question": "\u5c11 sh\u01ceo",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "9": {
+        "answer": [
+            "vegetables, veggie, cuisine"
+        ],
+        "form": "written",
+        "question": "\u83dc c\u00e0i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "90": {
+        "answer": [
+            "who"
+        ],
+        "form": "written",
+        "question": "\u8c01 sh\u00e9i",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "91": {
+        "answer": [
+            "what"
+        ],
+        "form": "written",
+        "question": "\u4ec0\u4e48 sh\u00e9n me",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "92": {
+        "answer": [
+            "ten, 10"
+        ],
+        "form": "written",
+        "question": "\u5341 sh\u00ed",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "93": {
+        "answer": [
+            "time, length of time, moment"
+        ],
+        "form": "written",
+        "question": "\u65f6\u5019 sh\u00ed hou",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "94": {
+        "answer": [
+            "yes"
+        ],
+        "form": "written",
+        "question": "\u662f sh\u00ec",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "95": {
+        "answer": [
+            "book, letter"
+        ],
+        "form": "written",
+        "question": "\u4e66 sh\u016b",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "96": {
+        "answer": [
+            "water, river, liquid"
+        ],
+        "form": "written",
+        "question": "\u6c34 shu\u01d0",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "97": {
+        "answer": [
+            "fruit"
+        ],
+        "form": "written",
+        "question": "\u6c34\u679c shu\u01d0gu\u01d2",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "98": {
+        "answer": [
+            "go to bed, go to sleep"
+        ],
+        "form": "written",
+        "question": "\u7761\u89c9 shu\u00ec ji\u00e0o",
+        "timesCorrect": 0,
+        "timesIncorrect": 0
+    },
+    "99": {
+        "answer": [
+            "speak, say"
+        ],
+        "form": "written",
+        "question": "\u8bf4 shu\u014d",
         "timesCorrect": 0,
         "timesIncorrect": 0
     }

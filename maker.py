@@ -1,3 +1,4 @@
+import os
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -23,22 +24,20 @@ class Ui_QuizMaker(QtWidgets.QMainWindow):
 
         #layout
         self.frame = QtWidgets.QFrame()
-        self.frame.setObjectName("frame")
         self.setCentralWidget(self.frame)
 
         self.gridLayout = QtWidgets.QGridLayout(self.frame)
-        self.gridLayout.setObjectName("gridLayout")
-        self.qCharNameBox = QtWidgets.QLineEdit()
-        self.qCharNameBox.setObjectName("qCharNameBox")
-        self.gridLayout.addWidget(self.qCharNameBox)
+        self.quizNameBox = QtWidgets.QLabel("Open quiz or make new quiz to get started")
+        nameFont = QtGui.QFont()
+        nameFont.setBold(True)
+        self.quizNameBox.setFont(nameFont)
+        self.gridLayout.addWidget(self.quizNameBox)
         
         self.listView = QtWidgets.QListWidget()
-        self.listView.setObjectName("listView")
         self.listView.itemDoubleClicked.connect(self.editQuestion)
         self.gridLayout.addWidget(self.listView)
 
         self.addQuestion = QtWidgets.QPushButton("Add Questions")
-        self.addQuestion.setObjectName("addQuestion")
         self.gridLayout.addWidget(self.addQuestion)
 
         self.addQuestion.clicked.connect(self.add)
@@ -46,13 +45,17 @@ class Ui_QuizMaker(QtWidgets.QMainWindow):
         self.show()
 
     def newQuiz(self):
-        self.listView.clear()
-        self.quizPath = QtWidgets.QFileDialog.getSaveFileName(self, "New Quiz")[0]
-        self.quiz = Quiz(self.quizPath)
+        self.quizPath = QtWidgets.QFileDialog.getSaveFileName(self, "New Quiz", "", "Quizzes (*.json)")[0]
+        if self.quizPath:
+            self.listView.clear()
+            self.quiz = Quiz(path=self.quizPath + ".json")
+            self.quizNameBox.setText(os.path.basename(self.quizPath))
 
     def openQuiz(self):
-        self.quizPath = QtWidgets.QFileDialog.getOpenFileName(self, "Open Quiz")[0]
+        self.quizPath = QtWidgets.QFileDialog.getOpenFileName(self, "Open Quiz", "", "Quizzes (*.json)")[0]
         self.quiz = Quiz(self.quizPath)
+        quizName = os.path.splitext(os.path.basename(self.quizPath))[0]
+        self.quizNameBox.setText(quizName)
         self.refreshView()
 
     def saveQuiz(self):
@@ -205,7 +208,7 @@ class QnAWidget(QtWidgets.QDialog):
     def returnQuestion(self):
         question = self.question.text()
         answers = [c.text() for c in self.choices]
-        if question and answers:
+        if question and answers != [""]:
             self.trigger.emit(question, answers)
             self.close()
 

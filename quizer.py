@@ -11,7 +11,7 @@ class QuizMaster(object):
     
     def __init__(self):
         try:
-            with open("config.json", "r") as f:
+            with open("config.cfg", "r") as f:
                 self.config = json.load(f)
         except IOError:
             self.config = {}
@@ -26,7 +26,7 @@ class QuizMaster(object):
     def saveConfig(self):
         self.config["timer"] = self.timer
         try:
-            with open("config.json", "w") as f:
+            with open("config.cfg", "w") as f:
                 json.dump(self.config, f, sort_keys=True, indent=4)
         except IOError as error:
             raise error
@@ -44,8 +44,8 @@ class QuizMaster(object):
             "active": True}
         return Quiz(path)
 
-    def loadQuiz(self, path):
-        pass
+    def loadQuiz(self):
+        return self.config["quizzes"][0]
 
     @classmethod
     def getQuestionTime(cls):
@@ -64,6 +64,7 @@ class Quiz(object):
             with open(path, "r") as f:
                 self.data = json.load(f)
         except:
+            print("json exception")
             self.data = {}
         self.path = path
 
@@ -78,13 +79,16 @@ class Quiz(object):
         '''
         @param form = written, trueOrFalse, multipleChoice
         '''
-        total = [int(i) for i in (self.data.keys())]
-        # get next free index
-        free = set(range (1, total[-1])) - set(total)
-        if free:
-            index = free
-        else:
-            index = str(len(total) + 1)
+        if self.data.keys():
+            total = [int(i) for i in (self.data.keys())]
+            # get next free index
+            free = set(range (1, total[-1])) - set(total)
+            if free:
+                index = free
+            else:
+                index = str(len(total) + 1)
+        elif self.data == {}:
+            index = "1"
         self.data[index] = {"question": question,
                             "answer": answer,
                             "form": form,

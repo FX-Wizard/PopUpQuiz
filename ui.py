@@ -100,6 +100,10 @@ class PopupMultipleChoice(Popup):
         self.trigger.emit(answer)
         self.close()
 
+    def keyPressEvent(self, event):
+        if event.key() == QtCore.Qt.Key_Escape:
+            self.close()
+
 
 class PopupMessage(Popup):
     def __init__(self, message):
@@ -199,7 +203,8 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         self.setIcon(QtGui.QIcon.fromTheme("document-save"))
 
         # initialize quiz
-        self.quiz = Quiz()
+        quizmaster = QuizMaster()
+        self.quiz = Quiz(quizmaster.loadQuiz())
         time = QuizMaster().getQuestionTime()
         self.timer = QuizTimer(time, self.showPopup)
         self.timer.start()
@@ -207,6 +212,7 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         # context menu stuff
         self.menu = QtWidgets.QMenu()
         self.mAsk = self.menu.addAction("Ask Question", self.showPopup)
+        self.mPause = self.menu.addAction("Pause", lambda: self.pauseResume("Pause"))
         self.mSetTime = self.menu.addAction("Set Timer", self.setTimer)
         self.mQmaker = self.menu.addAction("Quiz Maker", self.showQuizMaker)
         self.mQuit = self.menu.addAction("Quit", lambda: sys.exit())
@@ -231,6 +237,18 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
     def setTimer(self):
         self.setTimerDialog = SetInterval()
         self.setTimerDialog.trigger[int].connect(self.timer.update)
+
+    def pauseResume(self, action=None):
+        if action == "Pause":
+            self.timer.stop()
+            self.mResume = self.menu.addAction("Resume", lambda: self.pauseResume("Resume"))
+            self.menu.insertAction(self.mPause, self.mResume)
+            self.menu.removeAction(self.mPause)
+        else:
+            self.timer.start()
+            self.mPause = self.menu.addAction("Pause", lambda: self.pauseResume("Pause"))
+            self.mPause = self.menu.insertAction(self.mResume, self.mPause)
+            self.menu.removeAction(self.mResume)
 
     def showQuizMaker(self):
         self.quizMaker = Ui_QuizMaker()
