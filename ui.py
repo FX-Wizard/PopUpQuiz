@@ -14,14 +14,11 @@ class Popup(QtWidgets.QDialog):
         super(Popup, self).__init__(parent)
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | # Hide window borders
                             #QtCore.Qt.WindowDoesNotAcceptFocus | # doesnt steal focus
-                            QtCore.Qt.WindowStaysOnTopHint |
-                            QtCore.Qt.SplashScreen) # keep window on top
+                            QtCore.Qt.WindowStaysOnTopHint | # keep window on top
+                            QtCore.Qt.SplashScreen) # hide in task bar
 
         self.setMinimumSize(200, 75)
         self.setStyleSheet(open("style.qss", "r").read())
-
-        # Widgets
-        # self.settingsBtn = QtWidgets.QCommandLinkButton()
 
         self.textBody = QtWidgets.QLabel(self)
         self.textBody.setWordWrap = True
@@ -31,7 +28,6 @@ class Popup(QtWidgets.QDialog):
         # Layout
         self.layout = QtWidgets.QGridLayout()
         self.layout.setSpacing(10)
-        # self.layout.addWidget(self.settingsBtn, 1, 0)
         self.layout.addWidget(self.textBody, 2, 0)
         self.setLayout(self.layout)
 
@@ -40,7 +36,6 @@ class Popup(QtWidgets.QDialog):
         x = screenSize.width()
         y = screenSize.height()
         self.move(x, y)
-        # self.setFixedWidth(165)
 
         self.show()
 
@@ -100,10 +95,6 @@ class PopupMultipleChoice(Popup):
         self.trigger.emit(answer)
         self.close()
 
-    def keyPressEvent(self, event):
-        if event.key() == QtCore.Qt.Key_Escape:
-            self.close()
-
 
 class PopupMessage(Popup):
     def __init__(self, message):
@@ -120,6 +111,10 @@ class PopupMessage(Popup):
     def closePopup(self):
         self.timer.stop()
         self.close()
+
+    def keyPressEvent(self, event):
+        if event.key():
+            self.close()
 
     def setStyle(self):
         if "Wrong" in self.message:
@@ -210,6 +205,7 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         self.timer.start()
         
         # context menu stuff
+        self.activated.connect(self.leftClickEvent)
         self.menu = QtWidgets.QMenu()
         self.mAsk = self.menu.addAction("Ask Question", self.showPopup)
         self.mPause = self.menu.addAction("Pause", lambda: self.pauseResume("Pause"))
@@ -218,6 +214,10 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
         self.mQuit = self.menu.addAction("Quit", lambda: sys.exit())
         self.setContextMenu(self.menu)
         self.show()
+
+    def leftClickEvent(self, event):
+        if event == self.Trigger:
+            self.showPopup()
 
     def showPopup(self):
         # self.timer.stop()

@@ -5,6 +5,7 @@ import random
 import time
 import threading
 
+import collections
 
 class QuizMaster(object):
     timer = 5
@@ -67,6 +68,9 @@ class Quiz(object):
             print("json exception")
             self.data = {}
         self.path = path
+        totalQuestions = int(10 * len(self.data.keys()) / 100)
+        self.previouslyAsked = collections.deque(maxlen=totalQuestions)
+
 
     def saveQuiz(self):
         try:
@@ -99,10 +103,16 @@ class Quiz(object):
     def deleteQuestion(self, question):
         del self.data[question]
 
-    def askQuestion(self):
+    def pickUpQuestion(self):
         questions = [i for i in (self.data.keys())]
         num = random.choice(questions)
-        self.quiz = self.data[str(num)]
+        return self.data[str(num)]
+
+    def askQuestion(self):
+        self.quiz = self.pickUpQuestion()
+        while self.quiz in self.previouslyAsked:
+            self.quiz = self.pickUpQuestion()
+        self.previouslyAsked.extend(self.quiz)
         question = self.quiz["question"]
         form = self.quiz["form"]
         return question, form
