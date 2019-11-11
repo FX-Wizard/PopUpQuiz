@@ -1,6 +1,6 @@
 import os
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PySide2 import QtCore, QtGui, QtWidgets
 
 from quizer import QuizMaster, Quiz
 
@@ -117,7 +117,7 @@ class Ui_QuizMaker(QtWidgets.QMainWindow):
 
 class AnswerTypeDialog(QtWidgets.QDialog):
     ''' Dialog for selecting response to question type '''
-    clicked = QtCore.pyqtSignal(str)
+    clicked = QtCore.Signal(str)
 
     def __init__(self, parent=None):
         super(AnswerTypeDialog, self).__init__()
@@ -152,7 +152,7 @@ class AnswerTypeDialog(QtWidgets.QDialog):
 
 
 class QnAWidget(QtWidgets.QDialog):
-    trigger = QtCore.pyqtSignal(str, list)
+    trigger = QtCore.Signal(str, list)
     
     def __init__(self, form=None, parent=None):
         super(QnAWidget, self).__init__(parent)

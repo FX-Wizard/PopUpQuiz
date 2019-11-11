@@ -1,23 +1,33 @@
+import os
 import sys
 from functools import partial
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtCore import QObject, pyqtSlot
+from PySide2 import QtCore, QtGui, QtWidgets
 
 from quizer import Quiz, QuizMaster
 from maker import Ui_QuizMaker
 
-class Popup(QtWidgets.QDialog):
-    trigger = QtCore.pyqtSignal(str)
+class Popup(QtWidgets.QWidget):
+    trigger = QtCore.Signal(str)
 
     def __init__(self, message, parent=None):
         super(Popup, self).__init__(parent)
+
+        VBox = QtWidgets.QVBoxLayout()
+        dialog = QtWidgets.QWidget()
+        VBox.addWidget(dialog)
+        self.setLayout(VBox)
+
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | # Hide window borders
                             #QtCore.Qt.WindowDoesNotAcceptFocus | # doesnt steal focus
                             QtCore.Qt.WindowStaysOnTopHint | # keep window on top
                             QtCore.Qt.SplashScreen) # hide in task bar
 
-        self.setMinimumSize(200, 75)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground, True)
+
+        width = 200
+        height = 85
+        self.setMinimumSize(width, height)
         self.setStyleSheet(open("style.qss", "r").read())
 
         self.textBody = QtWidgets.QLabel(self)
@@ -29,13 +39,16 @@ class Popup(QtWidgets.QDialog):
         self.layout = QtWidgets.QGridLayout()
         self.layout.setSpacing(10)
         self.layout.addWidget(self.textBody, 2, 0)
-        self.setLayout(self.layout)
+        dialog.setLayout(self.layout)
 
         # reposition on screen
         screenSize = QtWidgets.QDesktopWidget().screenGeometry()
         x = screenSize.width()
         y = screenSize.height()
-        self.move(x, y)
+        if sys.platform.startswith('linux'):
+            self.move(x, y)
+        else:
+            self.move(x - width, y - height)
 
         self.show()
 
@@ -118,7 +131,7 @@ class PopupMessage(Popup):
 
     def setStyle(self):
         if "Wrong" in self.message:
-            self.setStyleSheet(""" QDialog {
+            self.setStyleSheet(""" .QWidget {
                 background-color: #b30000;
                 border-style: outset;
                 border-width: 2px;
@@ -126,7 +139,7 @@ class PopupMessage(Popup):
                 border-color: #680000;
             } """)
         else:
-            self.setStyleSheet(""" QDialog {
+            self.setStyleSheet(""" .QWidget {
                 background-color: #1eb300;
                 border-style: outset;
                 border-width: 2px;
@@ -154,7 +167,7 @@ class QuizTimer(object):
 
 
 class SetInterval(QtWidgets.QWidget):
-    trigger = QtCore.pyqtSignal(int)
+    trigger = QtCore.Signal(int)
 
     def __init__(self):
         super(SetInterval, self).__init__()
@@ -195,7 +208,16 @@ class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
 
     def __init__(self):
         super(SystemTrayIcon, self).__init__()
-        self.setIcon(QtGui.QIcon.fromTheme("document-save"))
+        if sys.platform.startswith('linux'):
+            self.setIcon(QtGui.QIcon("{}/icon.png".format(os.getcwd())))
+        elif sys.platform.startswith('darwin'):
+            self.setIcon(QtGui.QIcon("{}/icon.png".format(os.getcwd())))
+        else:
+            self.setIcon(QtGui.QIcon("{}/icon.ico".format(os.getcwd())))
+        # try:
+
+        # except:
+            # self.setIcon(QtGui.QIcon.fromTheme("document-save"))
 
         # initialize quiz
         quizmaster = QuizMaster()

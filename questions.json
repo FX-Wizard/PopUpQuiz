@@ -204,7 +204,7 @@
         "form": "written",
         "question": "\u5c0f xi\u01ceo",
         "timesCorrect": 0,
-        "timesIncorrect": 1
+        "timesIncorrect": 0
     },
     "12": {
         "answer": [
@@ -640,7 +640,8 @@
     },
     "3": {
         "answer": [
-            "father"
+            "father",
+            "dad"
         ],
         "form": "written",
         "question": "\u7238\u7238 b\u00e0 ba",
@@ -1122,7 +1123,7 @@
         "form": "written",
         "question": "\u524d\u9762 qi\u00e1n mi\u00e0n",
         "timesCorrect": 0,
-        "timesIncorrect": 1
+        "timesIncorrect": 0
     },
     "79": {
         "answer": [
