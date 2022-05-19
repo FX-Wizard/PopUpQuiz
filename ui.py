@@ -2,7 +2,7 @@ import os
 import sys
 from functools import partial
 
-from PySide2 import QtCore, QtGui, QtWidgets
+from PySide6 import QtCore, QtGui, QtWidgets
 
 from quizer import Quiz, QuizMaster
 from maker import Ui_QuizMaker
@@ -42,7 +42,7 @@ class Popup(QtWidgets.QWidget):
         dialog.setLayout(self.layout)
 
         # reposition on screen
-        screenSize = QtWidgets.QDesktopWidget().screenGeometry()
+        screenSize = QtGui.QScreen.availableGeometry(QtWidgets.QApplication.primaryScreen())
         x = screenSize.width()
         y = screenSize.height()
         if sys.platform.startswith('linux'):

@@ -68,7 +68,7 @@
         ],
         "form": "written",
         "question": "\u5929\u6c14 ti\u0101n q\u00ec",
-        "timesCorrect": 0,
+        "timesCorrect": 1,
         "timesIncorrect": 0
     },
     "106": {
@@ -104,7 +104,7 @@
         ],
         "form": "written",
         "question": "\u6211 w\u01d2",
-        "timesCorrect": 0,
+        "timesCorrect": 1,
         "timesIncorrect": 0
     },
     "11": {
@@ -483,7 +483,7 @@
         "form": "written",
         "question": "\u505a zu\u00f2",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "148": {
         "answer": [
@@ -518,7 +518,7 @@
         ],
         "form": "written",
         "question": "\u7535\u8111 di\u00e0n n\u01ceo",
-        "timesCorrect": 0,
+        "timesCorrect": 1,
         "timesIncorrect": 0
     },
     "18": {
@@ -555,7 +555,7 @@
         "form": "written",
         "question": "\u4e1c\u897f d\u014dng xi",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "21": {
         "answer": [
@@ -646,7 +646,7 @@
         "form": "written",
         "question": "\u7238\u7238 b\u00e0 ba",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "30": {
         "answer": [
@@ -655,7 +655,7 @@
         "form": "written",
         "question": "\u5206\u949f f\u0113n zh\u014dng",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "31": {
         "answer": [
@@ -718,7 +718,7 @@
         "form": "written",
         "question": "\u53f7 h\u00e0o",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "38": {
         "answer": [
@@ -772,7 +772,7 @@
         "form": "written",
         "question": "\u56de hu\u00ed",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "43": {
         "answer": [
@@ -879,7 +879,7 @@
         ],
         "form": "written",
         "question": "\u6765 l\u00e1i",
-        "timesCorrect": 0,
+        "timesCorrect": 1,
         "timesIncorrect": 0
     },
     "54": {
@@ -979,7 +979,7 @@
         "form": "written",
         "question": "\u6ca1\u5173\u7cfb m\u00e9i gu\u0101n xi",
         "timesCorrect": 0,
-        "timesIncorrect": 0
+        "timesIncorrect": 1
     },
     "64": {
         "answer": [
@@ -1086,7 +1086,7 @@
         ],
         "form": "written",
         "question": "\u670b\u53cb p\u00e9ng you",
-        "timesCorrect": 0,
+        "timesCorrect": 1,
         "timesIncorrect": 0
     },
     "75": {

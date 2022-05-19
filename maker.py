@@ -1,6 +1,6 @@
 import os
 import sys
-from PySide2 import QtCore, QtGui, QtWidgets
+from PySide6 import QtCore, QtGui, QtWidgets
 
 from quizer import QuizMaster, Quiz
 
@@ -12,8 +12,8 @@ class Ui_QuizMaker(QtWidgets.QMainWindow):
         self.setMinimumSize(400, 560)
         # tool bar
         self.toolBar = QtWidgets.QToolBar()
-        self.aNewQuiz = QtWidgets.QAction("New", self)
-        self.aOpenQuiz = QtWidgets.QAction("Open", self)
+        self.aNewQuiz = QtGui.QAction("New", self)
+        self.aOpenQuiz = QtGui.QAction("Open", self)
         self.aNewQuiz.setShortcut("Ctrl+N")
         self.aOpenQuiz.setShortcut("Ctrl+O")
         self.aNewQuiz.triggered.connect(self.newQuiz)
